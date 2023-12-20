@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<style type="text/css">
+		body{
+			background-color: #F0FFF0;
+		}
+		#container{
+			width:900px;
+			color: #fff;
+			font-size: 20px;
+			text-align: center;
+			height: auto;
+			margin: auto;
+		}
+		#header{
+			height: 300px;
+			background-color: gray;
+			background-image: url("gambarawal1.jpg");
+			background-size: 100% 100%;
+			padding-bottom: 30px;
+		}
+		#content{
+			height: 470px;
+			width: 100%;
+			background-color: #8FBC8F;
+			float: left;
+		}
+		#content p{
+			font-size: 17px;
+			text-align: justify;
+			padding: 4px 12px 4px 12px;
+		}
+		#content img{
+			float: left;
+			margin-right: 20px;
+			margin-left: 15px;
+			margin-top: 20px;
+		}
+		img{
+			width: 200px;
+			height:200px;
+		}
+		#content .gambarke2.jpg{
+			float: left;
+			margin-right: 20px;
+			margin-top: 5px;
+		}
+		#footer{
+			height: 90px;
+			background-color: #000;
+			clear: both;
+			font-size: 25px;
+			padding-top: 30px;
+		}
+		#nav{
+			height: 50px;
+			background-color: #000;
+			font-size: 19px;
+			padding-top: 20px;
+		}
+		#nav a{
+			color: red
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header"></div>
+		<div id="nav">
+			<a href="index1.html">Home |</a>
+			<a href="gallery1.html">Gallery |</a>
+			<a href="AboutUs.html">About Us |</a>
+			<a href="contact1.html">Contact Us |</a>
+
+		<script>
+		var waktu = new Date();
+		var jam = waktu.getHours();
+		var tgl = waktu.getDate();
+		var bln = waktu.getMonth();
+		var thn = waktu.getFullyear();
+		var hr = waktu .getDay();
+
+        var bulan = ["jan","feb","Mret","Apr","Mei","jun","jul","Agst","sep","okt","nov","Desember"];
+        var hari = ["Minggu","Senen","Selasa","Rabu",]
+
+
+        if (jam<=10) {
+        	document.write("Hai Selamat Pagi");
+        } else if (jam<=14){
+        	document.write("Hai Selamat Siang");
+        }else if (jam<=17){
+        	document.write("Hai Selamat Sore");
+        }else {
+        	document.write("Hai Selamat Malam");
+        }
+        document.write(hari[hr]+","+tgl" "+bulan[bln]+" "+thn+"<br>");
+    </script>
+    	</div>
+    	<div id="content">
+    		<h2><b>Kota Cilacap</b></h2><hr>
+    		<img src="gambarke2.jpg">
+    		<p><b>Cilacap</b>Kota Cilacap adalah ibu kota Kabupaten Cilacap yang sekaligus menjadi pusat pemerintahan dan perekonomian dari Kabupaten Cilacap, Provinsi Jawa Tengah, Indonesia. Jumlah penduduknya 260.095 jiwa pada tahun 2023 dengan luas 88,76 km² yang terdiri atas 3 kecamatan. Kota Cilacap merupakan bekas kota administratif yang dipimpin oleh wali kota atas tunjukan bupati setempat (pejabat eselon 3), yang membawahi Kecamatan Cilacap Selatan, Kecamatan Cilacap Tengah dan Kecamatan Cilacap Utara. Sejak diberlakukannya otonomi daerah, maka status kota administratif Cilacap dihapuskan dan bergabung lagi ke daerah induknya, Kabupaten Cilacap.</p>
+    		<p><b>Kecamatan</b>Kota Cilacap diwacanakan untuk dimekarkan dari Kabupaten Cilacap menjadi kota otonom yang mandiri. Hal ini untuk memudahkan masyarakat Cilacap khususnya Kota Cilacap, karena wilayah Kabupaten Cilacap terluas di Jawa Tengah sehingga jarak Kecamatan terjauh yaitu Dayeuhluhur dengan pusat pemerintahan atau Kota Cilacap sangat jauh yaitu 125 km. Juga rencana pemekaran Cilacap Barat dari Kabupatan Cilacap yang tak kunjung disahkan oleh DPR pusat.[3] Saat ini DPRD Kabupaten Cilacap sedang membahas pemekaran Kecamatan Kahuripan atau Kecamatan Cilacap Timur hasil pemekaran dari Kecamatan Kesugihan, Jeruklegi, dan Adipala. Sehingga dapat memudahkan masyarakat, dan akan dimasukkan menjadi Kota Cilacap bila pemekaran kota terealisasi, karena minimal sebuah kotamadya memiliki 4 kecamatan.</p>
+    		
+    	</div>
+    	<div id="footer">
+    		<p>&copy; CopyRight 2023-Micha Fadila-231011700485-01SIFP009</p>
+    	</div>
+
+
+
+
+
+
+
+
+

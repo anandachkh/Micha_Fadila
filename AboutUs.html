@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<style type="text/css">
+		body{
+			background-color: #F0FFF0;
+		}
+		#container{
+			width:900px;
+			color: #fff;
+			font-size: 20px;
+			text-align: center;
+			height: auto;
+			margin: auto;
+		}
+		#header{
+			height: 300px;
+			background-color: gray;
+			background-image: url("gambarawal1.jpg");
+			background-size: 100% 100%;
+			padding-bottom: 30px;
+		}
+		#content{
+			height: 400px;
+			width: 100%;
+			background-color: #8FBC8F;
+			float: left;
+		}
+		#content p{
+			font-size: 17px;
+			text-align: justify;
+			padding: 4px 12px 4px 12px;
+		}
+		#footer{
+			height: 90px;
+			background-color: #000;
+			clear: both;
+			font-size: 25px;
+			padding-top: 30px;
+		}
+		#nav{    
+			height: 50px;
+			background-color: #000;
+			font-size: 19px;
+			padding-top: 20px;
+		}
+		#nav a{
+			color: red
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header"></div>
+		<div id="nav">
+			<a href="index1.html">Home |</a>
+			<a href="gallery1.html">Gallery |</a>
+			<a href="AboutUs.html">About Us|</a>
+			<a href="contact1.html">Contact Us |</a>
+
+		<script>
+		var waktu = new Date();
+		var jam = waktu.getHours();
+		var tgl = waktu.getDate();
+		var bln = waktu.getMonth();
+		var thn = waktu.getFullyear();
+		var hr = waktu .getDay();
+
+        var bulan = ["jan","feb","Mret","Apr","Mei","jun","jul","Agst","sep","okt","nov","Desember"];
+        var hari = ["Minggu","Senen","Selasa","Rabu",]
+
+
+        if (jam<=10) {
+        	document.write("Hai Selamat Pagi");
+        } else if (jam<=14){
+        	document.write("Hai Selamat Siang");
+        }else if (jam<=17){
+        	document.write("Hai Selamat Sore");
+        }else {
+        	document.write("Hai Selamat Malam");
+        }
+        document.write(hari[hr]+","+tgl" "+bulan[bln]+" "+thn+"<br>");
+    </script>
+    	</div>
+    	<div id="content">
+    		<h2><b>Kota Cilacap</b></h2><hr>
+    		<p><b>Sejarah Kota Cilacap</b>Sejarah Kabupaten Cilacap
+1. Zaman Kerajaan Jawa
+Penelusuran sejarah zaman kerajaan Jawa diawali sejak zaman Kerajaan Mataram Hindu sampai dengan Kerajaan Surakarta. Pada akhir zaman Kerajaan Majapahit (1294-1478) daerah cikal-bakal Kabupaten Cilacap terbagi dalam wilayah-wilayah Kerajaan Majapahit, Adipati Pasir Luhur dan Kerajaan Pakuan Pajajaran, yang wilayahnya membentang dari timur ke arah barat :
+– Wilayah Ki Gede Ayah dan wilayah Ki Ageng Donan dibawah kekuasaan Kerajaan Majapahit. 
+– Wilayah Kerajaan Nusakambangan dan wilayah Adipati Pasir Luhur 
+– Wilayah Kerajaan Pakuan Pajajaran. 
+Menurut Husein Djayadiningrat, Kerajaan Hindu Pakuan Pajajaran setelah diserang oleh kerjaan Islam Banten dan Cirebon jatuh pada tahun 1579, sehingga bagian timur Kerajaan Pakuan Pajajaran diserahkan kepada Kerajaan Cirebon. Oleh karena itu seluruh wilayah cikal-bakal Kabupaten Cilacap di sebelah timur dibawah kekuasaan Kerajaan Islam Pajang dan sebelah barat diserahkan kepada Kerajaan Cirebon. Kerajaan Pajang diganti dengan Kerajaan Mataram Islam yang didirikan oleh Panembahan Senopatipada tahun 1587-1755, maka daerah cikal bakal Kabupaten Cilacap yang semula di bawah kekuasaan Kerajaan Islam Pajang diserahkan kepada Kerajaan Mataram .Pada tahun 1595 Kerajaan Mataram mengadakan ekspansi ke Kabupaten Galuh yang berada di wilayah Kerajaan Cirebon.Sejarah Kabupaten Cilacap
+    		
+    	</div>
+    	<div id="footer">
+    		<p>&copy; CopyRight 2023-Micha Fadila-231011700485-01SIFP009</p>
+    	</div>

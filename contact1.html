@@ -1,0 +1,144 @@
+<DOCTYPE html>
+<html>
+<head>
+  <title>Design Form</title>
+  <style type="text/css">
+    body{
+      background-color: palegreen;
+    }
+
+    .bungkus{
+      width: 400px;
+      margin: auto;
+      height: 400px;
+      padding: 9px 10px;
+      color: white;
+    }
+    #container{
+      width:700px;
+      color: #000;
+      font-size: 20px;
+      text-align: center;
+      height: auto;
+      margin: auto;
+    }
+    #header{
+      height: 300px;
+      background-color: gray;
+      background-image: url("gambarawal1.jpg");
+      background-size: 100% 100%;
+      padding-bottom: 30px;
+    }
+    #content{
+      height: 400px;
+      width: 100%;
+      background-color: black;
+      float: left;
+      color: white;
+    }
+    #content p{
+      font-size: 17px;
+      text-align: justify;
+      padding: 4px 12px 4px 12px;
+    }
+    #footer{
+      height: 90px;
+      background-color: #000;
+      clear: both;
+      font-size: 25px;
+      padding-top: 30px;
+      color: white;
+    }
+    input[type=text],textarea,select{
+      width: 100%;
+      background-color: pink;
+      font-family: arial;
+      font-size: 14px;
+      color: maroon;
+      padding: 10px 5px;
+      border-radius: 5px;
+      border: none;
+      box-sizing: border-box;
+    }
+    input[type=submit]{
+      background-color: green;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: none;
+      margin-top: 10px;
+      float: right;
+    }
+    h2{
+      text-align: center;
+      font-family: arial;
+    }
+    label{
+      font-family: arial;
+      font-size: 14px;
+    } 
+    #nav{    
+      height: 50px;
+      background-color: #000;
+      font-size: 19px;
+      padding-top: 20px;
+    }
+    #nav a{
+      color: red
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="header"></div>
+    <div id="nav">
+      <a href="index1.html">Home |</a>
+      <a href="gallery1.html">Gallery |</a>
+      <a href="AboutUs.html">About Us|</a>
+      <a href="contact1.html">Contact Us |</a>
+
+    <script>
+    var waktu = new Date();
+    var jam = waktu.getHours();
+    var tgl = waktu.getDate();
+    var bln = waktu.getMonth();
+    var thn = waktu.getFullyear();
+    var hr = waktu .getDay();
+
+        var bulan = ["jan","feb","Mret","Apr","Mei","jun","jul","Agst","sep","okt","nov","Desember"];
+        var hari = ["Minggu","Senen","Selasa","Rabu",]
+
+
+        if (jam<=10) {
+          document.write("Hai Selamat Pagi");
+        } else if (jam<=14){
+          document.write("Hai Selamat Siang");
+        }else if (jam<=17){
+          document.write("Hai Selamat Sore");
+        }else {
+          document.write("Hai Selamat Malam");
+        }
+        document.write(hari[hr]+","+tgl" "+bulan[bln]+" "+thn+"<br>");
+    </script>
+      </div>
+  <div class="bungkus">
+    <h2>CONTACT US</h2>
+    <form>
+      <label>Nama</label> <input type="text" name="nm" placeholder="Masukan Nama Anda">
+      <label>Alamat</label> <textarea name="alamat"></textarea>
+      <label>Kota</label> <select>
+            <option>--Pilih Kota--</option>
+            <option>Pandeglang</option>
+              <option>Serang</option>
+              <option>Rangkasbitung</option>
+              <option>Tangerang</option>
+              <option>Jakarta</option>
+      </select>
+      <input type="submit" name="submit" value="Simpan">
+    </form>
+</div>
+<div id="footer">
+        <p>&copy; CopyRight 2023-Micha Fadila-231011700485-01SIFP009</p>
+      </div>
+</body>
+</html>
